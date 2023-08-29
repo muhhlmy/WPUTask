@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style Here */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    background-color: yellow;
+}
+nav {
+    display: flex;
+    background-color: #32a852;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav ul{
+    /* background-color: aqua; */
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #F7BF62;
+}
+
+.hero {
+    height: 271px;
+    background-image: url(Hero1.jpg);
+    background-size: cover;
+    background-position: 0 -120px;
+    border-top: 5px solid #F7BF62;
+    border-bottom: 5px solid #F7BF62;
+}
+
+.content {
+    color: white;
+    background-color: #32a852;
+    padding: 50px;
+}
+
+.content #description{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content p{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.content #about{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content #joinus{
+    /* background-color: purple; */
+    margin-top: 50px;
+}
+
+.footer {
+    display: flex;
+    color: white;
+    background-color: #F7BF62;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets and phones) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    nav ul {
+        width: 350px;
+        /* background-color: #F7BF62; */
+        text-align: center;
+    }
+
+    .hero {
+        height: 200px;
+        background-position: 0 0px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content #description {
+        font-size: 24px;
+        margin-top: 20px;
+
+    }
+    .content #about {
+        font-size: 24px;
+    }
+
+    .footer p{
+        font-size: 10px;
+    }
+}
+
+/* Media query for screens smaller than 480px (e.g., small phones) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 28px;
+    }
+
+    .content #description,
+    .content #about {
+        font-size: 20px;
+    }
+}
